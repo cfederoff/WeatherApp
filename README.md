@@ -11,7 +11,7 @@ and more features are planned.
 ## Clothing Items
 While the feature is not complete, the software will search through conditons like temperature, wind speed, and more to find what the best clothing would be
 best for the conditions.
-# If it is 72F and Sunny, it suggest to wear a T-shirt and shorts
+* If it is 72F and Sunny, it suggest to wear a T-shirt and shorts
 
 
 
