@@ -4,7 +4,7 @@ This is a unnamed Weather Application currently being created using WeatherAPI.c
 and more features are planned.
 ## Features 
 * Build a simple java program that tells the current conditions outside (Complete)
-* Create a GUI for the program (Complete) and include a image of the current weather 
+* Create a GUI for the program and include a image of the current weather (Complete)
 * Add options to change the temperature to C and refresh the page for a updated look at the current weather
 * Add option to ask for what clothing one should where with the current weather conditions
 * Do the same for the 3 days in the future 
