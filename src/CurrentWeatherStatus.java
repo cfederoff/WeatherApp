@@ -1,4 +1,5 @@
 import java.net.URI;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
