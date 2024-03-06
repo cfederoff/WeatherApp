@@ -1,17 +1,15 @@
 # WeatherApp
 # Introduction
-This is a unnamed Weather Application currently being created using WeatherAPI.com to show weather in any location. This is currently a work in progress
-and more features are planned.
+This weather application uses WeatherAPI.com to report the weather in any location. This is currently a work in progress and additional features are under development.
 ## Features 
-* Build a simple java program that tells the current conditions outside (Complete)
-* Create a GUI for the program and include a image of the current weather (Complete)
-* Add options to change the temperature to C and refresh the page for a updated look at the current weather
-* Add option to ask for what clothing one should where with the current weather conditions
-* Do the same for the 3 days in the future 
+* Write a simple Java program reporting the current conditions outside (Complete)
+* Create a GUI for the program and include an image of the current weather (Complete)
+* Add options to change the temperature to Celsius and refresh the page for an updated look at the current weather
+* Add option to ask for what clothing one should wear based on the current weather conditions
+* Repeat this functionality for weather 3 days in the future
 ## Clothing Items
-While the feature is not complete, the software will search through conditons like temperature, wind speed, and more to find what the best clothing would be
-best for the conditions.
-* If it is 72F and Sunny, it suggest to wear a T-shirt and shorts
+* While this feature is not complete, the intent is for the software to search through conditions like temperature, wind speed, and more to determine the best clothing for the conditions.
+  * For example, if it’s 72° F and sunny, the app would suggest wearing a t-shirt and shorts.
 
 
 
