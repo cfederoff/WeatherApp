@@ -10,7 +10,7 @@ public class CurrentWeatherStatus {
     public String[] currentWeather(String location){
         Scanner scanner = new Scanner(System.in);
         String url = "http://api.weatherapi.com/v1/current" +
-                ".json?key=569af61ab3fa46ef98a11428240901&q=";
+                ".json?key=";
         location = location.replaceAll(" ", "_");
         url = url + location;
         HttpRequest request = HttpRequest.newBuilder()
