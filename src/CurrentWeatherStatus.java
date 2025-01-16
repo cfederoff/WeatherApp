@@ -1,6 +1,7 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.net.URI;
-import java.util.Arrays;
-import java.util.Scanner;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.net.http.HttpClient;
@@ -8,16 +9,19 @@ import java.io.IOException;
 
 public class CurrentWeatherStatus {
     public String[] currentWeather(String location){
-        Scanner scanner = new Scanner(System.in);
-        String url = "http://api.weatherapi.com/v1/current" +
-                ".json?key=569af61ab3fa46ef98a11428240901&q=";
+        String url = "";
+        try {
+            url = new BufferedReader(new FileReader("APICode.txt")).readLine();
+        } catch (IOException e) {
+            System.out.println("API Code Not Found");
+        }
         location = location.replaceAll(" ", "_");
         url = url + location;
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(url))
                 .method("GET", HttpRequest.BodyPublishers.noBody())
                 .build();
-        HttpResponse<String> response = null;
+        HttpResponse<String> response;
         try {
             response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
         } catch (IOException | InterruptedException e) {
